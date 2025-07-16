@@ -1,0 +1,12 @@
+<h2>Relógio Digital</h2>
+<p id="relogio" style="font-size: 30px;"></p>
+
+<script>
+  function atualizarRelogio() {
+    const agora = new Date();
+    let hora = agora.toLocaleTimeString();
+    document.getElementById("relogio").textContent = hora;
+  }
+  setInterval(atualizarRelogio, 1000);
+  atualizarRelogio();
+</script>
